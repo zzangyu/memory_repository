@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html,body,footer {
     margin: 0;
@@ -52,10 +53,12 @@ ul li{
     line-height: 25px; 
 }
 
-/* main */
-#main {
+/* wrap */
+#wrap {
     width: 100%;
     height: 100%;
     background-image:url("../images/backgroundimg.avif");
     background-size: cover;
 }
+
+/* main */

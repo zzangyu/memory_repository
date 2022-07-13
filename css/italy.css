@@ -53,14 +53,14 @@ ul li{
     line-height: 25px; 
 }
 
-/* main */
-#main {
+/* set background image */
+#wrap {
     width: 100%;
     height: 100%;
     position:relative;
     z-index:1;
 }
-#main:after{
+#wrap:after{
     background-image:url("../images/venice.jpg");
     top:0;
     left:0;
