@@ -27,7 +27,7 @@ ul li{
 #home,a {
     font:bold 16px "malgun gothic";
     text-decoration: none;
-    color:#333;
+    color: black;
 }
 #menu {
     display: flex;
@@ -66,8 +66,8 @@ ul li{
     left:0;
     position:absolute;
     background-size:100%;
-    opacity:0.8!important;
-    filter:alpha(opacity=80);
+    opacity:0.6!important;
+    filter:alpha(opacity=60);
     z-index:-1;
     content:"";
     width:100%;
