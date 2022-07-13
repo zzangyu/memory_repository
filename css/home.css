@@ -73,8 +73,8 @@ ul li{
     justify-content: center;
     align-items: center;
     line-height: 2.5em;
-    width: 600px;
-    height: 500px;
+    width: 40%;
+    height: 77%;
     margin-left: 8%;
     margin-top: 5%;
     background-color: rgba(255, 255, 255, 0.3);
@@ -95,10 +95,12 @@ ul li{
 
 /* slide */
 .slide {
-    display: flex;
     margin: 19% 0 0 17%;
     width: 19%;
     height: 28%;
     border-radius: 5px;
     border: 2px solid rgba(255, 255, 255, 0.37);
 }
+/* 
+@media only screen and (max-width: 1246px) {
+} */
