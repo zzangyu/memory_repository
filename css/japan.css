@@ -9,20 +9,9 @@ html,body,footer {
     height: 100%;
     background-color: white;
 }
-#main {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(215, 156, 184, 0.207);
-}
-/* logo */
-#menu > img {
-    position: relative; 
-    width: 50px; 
-    height: 50px; 
-    right: 70%;
-}
+
 /* header */
-header {
+header{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,23 +20,21 @@ header {
     right: 0;
     width: 100%;
     height: 85px;
-    font-weight: bold;
-    font-size: 18px;
 }
 ul li{
     list-style: none;
 }
-a {
+#home,a {
+    font:bold 16px "malgun gothic";
     text-decoration: none;
     color:#333;
 }
 #menu {
     display: flex;
+    text-align: center;
     font:bold 16px "malgun gothic";
-    color:black;
     line-height: 50px; 
     margin:0 auto;
-    text-align: center;
 }
 #menu > ul > li {
     float:left;
@@ -55,12 +42,35 @@ a {
     position:relative;
 }
 #menu > ul > li > ul {
-    width:130px;
+    width:140px;
     display:none;
     position: absolute;
-    font-size:14px;
 }
-/* show ul */
+/* show menu */
 #menu > ul > li:hover > ul {
     display:block;
+    font:bold 14px "malgun gothic";
+    line-height: 25px; 
+}
+
+/* main */
+#main {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    z-index:1;
+}
+#main:after{
+    background-image:url("../images/backgroundimg.avif");
+    top:0;
+    left:0;
+    position:absolute;
+    background-size:100%;
+    opacity:0.8!important;
+    filter:alpha(opacity=80);
+    z-index:-1;
+    content:"";
+    width:100%;
+    height:100%;
+    background-size: cover;
 }
