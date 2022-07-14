@@ -1,67 +1,23 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html,body,footer {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
-}
-
-/* header */
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 85px;
-}
-ul li{
-    list-style: none;
-}
-#home,a {
-    font:bold 16px "malgun gothic";
-    text-decoration-line: none;
-    color: black;
-
-}
-#menu {
-    display: flex;
-    text-align: center;
-    font:bold 16px "malgun gothic";
-    line-height: 50px; 
-    margin:0 auto;
-}
-#menu > ul > li {
-    float:left;
-    width:140px;
-    position:relative;
-}
-#menu > ul > li > ul {
-    width:140px;
-    display:none;
-    position: absolute;
-}
-/* show menu */
-#menu > ul > li:hover > ul {
-    display:block;
-    font:bold 14px "malgun gothic";
-    line-height: 25px; 
 }
 
 /* set background image */
-#wrap {
+body {
     width: 100%;
     height: 100%;
     position:relative;
     z-index:1;
 }
-#wrap:after{
+body:after{
     background-image:url("../images/swis.jpg");
     top:0;
     left:0;
@@ -75,3 +31,71 @@ ul li{
     height:100%;
     background-size: cover;
 }
+
+/* header */
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 12%;
+}
+ul li{
+    list-style: none;
+}
+#home,a {
+    font:bold 18px "malgun gothic";
+    color: black;
+    text-decoration: none;
+}
+.countryMenu {
+    font-size: 14px;
+}
+#menubar {
+    display: flex;
+    text-align: center;
+    font:bold 18px "malgun gothic";
+    line-height: 50px; 
+    margin:0 auto;
+}
+#menubar > ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#menubar > ul > li {
+    float:left;
+    width:140px;
+    position:relative;
+}
+#menubar > ul > li > ul {
+    width:140px;
+    display:none;
+    position: absolute;
+}
+/* show menu */
+#menubar > ul > li:hover > ul {
+    display:block;
+    font:bold 14px "malgun gothic";
+    line-height: 25px; 
+}
+
+
+/* media query
+@media screen and (max-width: 800px) {
+
+    #frame {
+        width: 85%;
+    }
+
+    #titleWrap {
+        padding-top: 50px;
+    }
+
+    #menubar > ul > li {
+        flex: calc(25% - 25px);
+    }
+} */

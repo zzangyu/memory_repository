@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/home.css">
@@ -13,61 +14,65 @@
 </head>
 
 <body>
+    <!-- header -->
+    <header>
+        <div id="menubar">
+            <ul>
+                <li>
+                    <a href="home.html" id="home">Home</a>
+                </li>
+                <li>Country
+                    <ul>
+                        <li><a href="./japan.html" class="countryMenu">Japan</a></li>
+                        <li><a href="./france.html" class="countryMenu">France</a></li>
+                        <li><a href="./switzerland.html" class="countryMenu">Switzerland</a></li>
+                        <li><a href="./italy.html" class="countryMenu">Italy</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="photo.html">Photo</a>
+                </li>
+                <li>
+                    <a href="video.html">Video</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <div id="wrap">
-        <!-- header -->
-        <header>
-            <div id="menu">
-                <ul>
-                    <li>
-                        <a href="home.html" id="home">Home</a>
-                    </li>
-                    <li>Country
-                        <ul>
-                            <li class="metadata"><a href="./japan.html">Japan</a></li>
-                            <li class="metadata"><a href="./france.html">France</a></li>
-                            <li class="metadata"><a href="./switzerland.html">Switzerland</a></li>
-                            <li class="metadata"><a href="./italy.html">Italy</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="photo.html">Photo</a>
-                    </li>
-                    <li>
-                        <a href="video.html">Video</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+        <div id="frame">
+            <!-- text -->
+            <div id="titleWrap">
+                <div id="titlebackground">
+                    <div id="title">HanChangyu's memories🌙</div>
+                    <div id="text">
+                        このサイトは私のアルバムとして作られました。<br>
+                        色んな国を旅行しましたが、その中で印象的だった国を紹介したいと思います。<br>
+                        日本、スイス、イタリア、フランスで撮った写真と動画をアップロードしました。<br>
+                        Countryボタンを押してご覧になってください。<br>
+                        ありがとうございます！<br><br>
+                        이 사이트는 저의 앨범으로써 만들어졌습니다.<br>
+                        많은 나라를 여행했지만 그 중에서도 인상적이었던 나라를 소개하겠습니다.<br>
+                        일본, 스위스, 이탈리아, 프랑스에서 찍었던 사진과 동영상을 업로드 했습니다.<br>
+                        Country, Photo 그리고 Video 버튼을 눌러서 구경해주세요.<br>
+                        감사합니다！
+                        <p>
+                            <br>
+                            Thanks for watching
+                        </p>
 
-        <!-- main -->
-    <div id="mainWrap">
-        <!-- text -->
-        <div id="info">
-            <div>
-                <div id="title">HanChangyu's memories</div>
-                <div id="text">
-               このサイトは私のアルバムとして作られました。<br>
-                色んな国を旅行しましたが、その中で印象的だった国を紹介したいと思います。<br>
-                日本、スイス、イタリア、フランスで撮った写真と動画をアップロードしました。<br>
-                Countryボタンを押してご覧になってください。<br>
-                ありがとうございます！<br>
-                이 사이트는 저의 앨범으로써 만들어졌습니다.<br>
-                많은 나라를 여행했지만 그 중에서도 인상적이었던 나라를 소개하겠습니다.<br>
-                일본, 스위스, 이탈리아, 프랑스에서 찍었던 사진과 동영상을 업로드 했습니다.<br>
-                Country, Photo 그리고 Video 버튼을 눌러서 구경해주세요.<br>
-                감사합니다！
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- slide -->
-            <img class="slide" src="images/japan.jpg">
-            <img class="slide" src="images/paris.jpg">
-            <img class="slide" src="images/sky.jpg">
-            <img class="slide" src="images/swis.jpg">
-            <img class="slide" src="images/venice.jpg">
-            <script src="js/slide.js"></script>
-            <div style="width: 16%;">
-
+            <!-- imageWrap -->
+            <!-- slide -->
+            <div id="sildeWrap">
+                <div>Recommend Photos</div>
+                <img class="slide" src="images/japan.jpg">
+                <img class="slide" src="images/paris.jpg">
+                <img class="slide" src="images/sky.jpg">
+                <img class="slide" src="images/swis.jpg">
+                <img class="slide" src="images/venice.jpg">
+                <script src="js/slide.js"></script>
             </div>
         </div>
     </div>
