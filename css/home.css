@@ -107,16 +107,18 @@ ul li{
     width: 100%;
 }
 #sildeWrap div {
-    font-family: 'Capriola', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+    color: rgba(0, 0, 0, 0.61);
 }
 .slide {
     width: 100%;
     margin-top: 5%;
-    border-radius: 5px;
-    border: 2px solid rgba(255, 255, 255, 0.37);
+    border-radius: 10px;
+    border: 20px solid;
+    border-image: linear-gradient(to top, rgba(208, 94, 52, 0.557), rgb(225, 139, 69, 0.41), rgba(221, 158, 106, 0.3), rgba(221, 158, 106, 0.2));
+    border-image-slice: 1;
 }
 
 /* media query */

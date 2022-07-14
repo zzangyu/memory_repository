@@ -9,9 +9,26 @@ html,body,footer {
     width: 100%;
     height: 100%;
 }
+
+/* set background image */
 body {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    z-index:1;
+}
+body:after{
     background-image:url("../images/camera.jpg");
-    background-attachment: fixed;
+    top:0;
+    left:0;
+    position:absolute;
+    background-size:100%;
+    opacity:0.6!important;
+    filter:alpha(opacity=60);
+    z-index:-1;
+    content:"";
+    width:100%;
+    height:100%;
     background-size: cover;
 }
 

@@ -16,15 +16,16 @@ body {
     height: 100%;
     position:relative;
     z-index:1;
+    background-color: rgba(0, 0, 0, 1);
 }
 body:after{
-    background-image:url("../images/venice.jpg");
+    background-image:url("../images/venice2.jpg");
     top:0;
     left:0;
     position:absolute;
     background-size:100%;
-    opacity:0.6!important;
-    filter:alpha(opacity=60);
+    opacity:0.2!important;
+    filter:alpha(opacity=70);
     z-index:-1;
     content:"";
     width:100%;
@@ -49,7 +50,7 @@ ul li{
 }
 #home,a {
     font:bold 18px "malgun gothic";
-    color: black;
+    color: rgba(231, 231, 185, 0.813);
     text-decoration: none;
 }
 .countryMenu {
@@ -65,6 +66,7 @@ ul li{
 #menubar > ul {
     display: flex;
     flex-wrap: wrap;
+    color: rgba(231, 231, 185, 0.813);
 }
 #menubar > ul > li {
     float:left;
@@ -83,19 +85,91 @@ ul li{
     line-height: 25px; 
 }
 
+/* main */
+#wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#frame {
+    /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    height: 70%;
+    margin-top: 10%;
+    padding: 1% 0 1% 1%;
+    border-radius: 10px;
+}
+#map {
+    flex: 40%;
+    width: 100%;
+    height: 100%;
+}
+#map img {
+    width: 85%;
+    height: 90%;
+    padding: 10% 0 0 20%;
+}
+#where {
+    display: flex;
+    align-items: center;
+    color: white;
+    font: bold 19px "malgun gothic";
+    flex: 50%;
+    padding: 3% 3% 3% 3%;
+    line-height: 2em;
+}
+#where div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#where div .igo{
+    display: none;
+}
+#frame > #map:hover + #where div .igo {
+    display: block;
+}
+#frame > #map:hover + #where div #visible {
+    display: none;
+}
 
-/* media query
-@media screen and (max-width: 800px) {
 
-    #frame {
-        width: 85%;
+/* media query */
+    @media screen and (max-width: 800px) {
+
+        #frame {
+            margin-top: 130px;
+        }
+        #menubar > ul > li {
+            flex: calc(25% - 25px);
+        }
+
     }
+    @media screen and (max-width: 500px) {
 
-    #titleWrap {
-        padding-top: 50px;
-    }
+        #frame {
+            flex-direction: column;
+            margin-top: 130px;
+            height: 100%;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            padding-right: 1%;
+        }
+        #menubar > ul > li {
+            flex: calc(25% - 25px);
+        }
+        body:after {
+            background-attachment: fixed;
+            height: 120%;
+        }
 
-    #menubar > ul > li {
-        flex: calc(25% - 25px);
     }
-} */
