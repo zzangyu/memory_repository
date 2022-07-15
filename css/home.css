@@ -123,10 +123,6 @@ ul li{
 
 /* media query */
 @media screen and (max-width: 800px) {
-    header {
-        width: 100%;
-    }
-
     #frame {
         width: 80%;
     }
@@ -134,7 +130,6 @@ ul li{
     #titleWrap {
         padding-top: 50px;
     }
-
     #menubar > ul > li {
         flex: calc(25% - 25px);  
     }
