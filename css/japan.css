@@ -179,10 +179,10 @@ a {
 
 @media screen and (max-width: 800px) {
     body {
-        height: 180%;
+        height: 160%;
     }
     body:after {
-        height: 180%;
+        height: 140%;
     }
     header {
         position: static;
@@ -196,17 +196,18 @@ a {
         flex: calc(25% - 25px);
     }
     #time {
-        padding-left: 30%;
+        padding-left: 10%;
+        padding-right: 5%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     body {
-        height: 180%;
+        height: 150%;
     }
     body:after {
         background-attachment: fixed;
-        height: 160%;
+        height: 130%;
     }
     header {
         position: static;
@@ -227,7 +228,8 @@ a {
         flex: calc(25% - 25px);
     }
     #time {
-        padding-left: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
         margin-bottom: 120px;
     }
 }

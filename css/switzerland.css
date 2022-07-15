@@ -157,10 +157,10 @@ ul li{
 
 @media screen and (max-width: 800px) {
     body {
-        height: 180%;
+        height: 135%;
     }
     body:after {
-        height: 180%;
+        height: 130%;
     }
     header {
         position: static;
@@ -174,17 +174,18 @@ ul li{
         flex: calc(25% - 25px);
     }
     #time {
-        padding-left: 30%;
+        padding-left: 10%;
+        padding-right: 5%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     body {
-        height: 180%;
+        height: 135%;
     }
     body:after {
         background-attachment: fixed;
-        height: 160%;
+        height: 120%;
     }
     header {
         position: static;
@@ -205,7 +206,8 @@ ul li{
         flex: calc(25% - 25px);
     }
     #time {
-        padding-left: 20%;
+        padding-left: 10%;
+        padding-right: 5%;
         margin-bottom: 120px;
     }
 }
