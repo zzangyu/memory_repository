@@ -94,14 +94,12 @@ ul li{
     height: 100%;
 }
 #frame {
-    /* display: none; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     height: 70%;
     margin-top: 10%;
-    padding: 1% 0 1% 1%;
     border-radius: 10px;
 }
 #map {
@@ -110,35 +108,36 @@ ul li{
     height: 100%;
 }
 #map img {
-    width: 85%;
+    width: 70%;
     height: 90%;
-    padding: 10% 0 0 20%;
+    margin: 8% 0 0 20%;
 }
-#where {
-    display: flex;
-    align-items: center;
-    color: white;
-    font: bold 19px "malgun gothic";
-    flex: 50%;
-    padding: 3% 3% 3% 3%;
-    line-height: 2em;
-}
-#where div {
+#time {
+    flex: 21%;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
-#where div .igo{
-    display: none;
+#text {
+    padding-top: 10%;
+    color: white;
+    line-height: 20px;
+    font: bold 12px malgun gothic;
 }
-#frame > #map:hover + #where div .igo {
-    display: block;
+.title {
+    font-size: 20px;
+    color: rgb(242, 187, 88);
 }
-#frame > #map:hover + #where div #visible {
-    display: none;
+#where {
+    flex: 38%;
+    width: 100%;
+    height: 100%;
 }
+#where img {
+    width: 100%;
+    height: 100%;
+    padding-right: 10%;
+}
+
 
 
 /* media query */

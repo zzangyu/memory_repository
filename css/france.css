@@ -99,7 +99,6 @@ ul li{
     height: 70%;
     margin-top: 10%;
     padding: 1% 0 1% 1%;
-    background: linear-gradient( to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0) );
     border-radius: 10px;
 }
 #map {
