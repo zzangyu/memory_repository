@@ -60,7 +60,7 @@ ul li{
     display: flex;
     text-align: center;
     font:bold 18px "malgun gothic";
-    line-height: 50px; 
+    line-height: 30px; 
     margin:0 auto;
 }
 #menubar > ul {

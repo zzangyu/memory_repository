@@ -16,6 +16,7 @@ body {
     height: 100%;
     position:relative;
     z-index:1;
+    background-color: rgba(0, 0, 0, 1);
 }
 body:after{
     background-image:url("../images/swis.jpg");
@@ -23,8 +24,8 @@ body:after{
     left:0;
     position:absolute;
     background-size:100%;
-    opacity:0.6!important;
-    filter:alpha(opacity=60);
+    opacity:0.2!important;
+    filter:alpha(opacity=70);
     z-index:-1;
     content:"";
     width:100%;
@@ -49,7 +50,7 @@ ul li{
 }
 #home,a {
     font:bold 18px "malgun gothic";
-    color: black;
+    color: #00f5d4c2;
     text-decoration: none;
 }
 .countryMenu {
@@ -59,12 +60,13 @@ ul li{
     display: flex;
     text-align: center;
     font:bold 18px "malgun gothic";
-    line-height: 50px; 
+    line-height: 30px; 
     margin:0 auto;
 }
 #menubar > ul {
     display: flex;
     flex-wrap: wrap;
+    color: #00f5d4c2;
 }
 #menubar > ul > li {
     float:left;
@@ -91,15 +93,12 @@ ul li{
     width: 100%;
     height: 100%;
 }
-#frame{
+#frame {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     height: 70%;
     margin-top: 10%;
-    padding: 1% 0 1% 1%;
-    background: linear-gradient( to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4),  rgba(255, 255, 255, 0) );
     border-radius: 10px;
 }
 #map {
@@ -107,47 +106,106 @@ ul li{
     width: 100%;
     height: 100%;
 }
-#map img{
+#map img {
+    width: 75%;
+    height: 80%;
+    margin: 8% 0 0 10%;
+}
+#time {
+    flex: 21%;
     width: 100%;
     height: 100%;
 }
-#where{
-    color: black;
-    font: bold 19px "malgun gothic";
-    flex: 60%;
-    padding: 3% 3% 3% 6%;
-    line-height: 2em;
+#text {
+    /* padding-top: ; */
+    color: white;
+    line-height: 20px;
+    font: bold 12px malgun gothic;
+}
+.title {
+    font-size: 20px;
+    color: #33f0d7;
+}
+#where {
+    flex: 38%;
+    width: 100%;
+    height: 100%;
+}
+#where img {
+    width: 100%;
+    height: 100%;
+    padding-right: 10%;
 }
 
+
+
 /* media query */
-    @media screen and (max-width: 800px) {
-
-        #frame {
-            margin-top: 130px;
-        }
-        #menubar > ul > li {
-            flex: calc(25% - 25px);
-        }
-
+@media screen and (max-width: 1300px) {
+    body {
+        height: 120%;
     }
-    @media screen and (max-width: 500px) {
-
-        #frame {
-            flex-direction: column;
-            margin-top: 130px;
-            height: 100%;
-        }
-        #map {
-            width: 100%;
-            height: 100%;
-            padding-right: 1%;
-        }
-        #menubar > ul > li {
-            flex: calc(25% - 25px);
-        }
-        body:after {
-            background-attachment: fixed;
-            height: 120%;
-        }
-
+    body:after {
+        height: 120%;
     }
+    header {
+        position: static;
+    }
+    #menubar>ul>li {
+        flex: calc(25% - 25px);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        height: 180%;
+    }
+    body:after {
+        height: 180%;
+    }
+    header {
+        position: static;
+    }
+    #frame {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #menubar>ul>li {
+        flex: calc(25% - 25px);
+    }
+    #time {
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        height: 180%;
+    }
+    body:after {
+        background-attachment: fixed;
+        height: 160%;
+    }
+    header {
+        position: static;
+    }
+    #frame {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        height: 100%;
+    }
+    #map {
+        width: 100%;
+        height: 100%;
+        padding-right: 1%;
+        margin-bottom: 100px;
+    }
+    #menubar>ul>li {
+        flex: calc(25% - 25px);
+    }
+    #time {
+        padding-left: 20%;
+        margin-bottom: 120px;
+    }
+}
