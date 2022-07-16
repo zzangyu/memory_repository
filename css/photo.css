@@ -226,9 +226,9 @@ ul li {
   #menubar>ul>li {
       flex: calc(25% - 25px);
   }
-  .arrow button span i {
+  /* .arrow button span i {
     padding-left: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 400px) {
@@ -251,7 +251,7 @@ ul li {
   #menubar>ul>li {
       flex: calc(25% - 25px);
   }
-  .arrow button span i {
+  /* .arrow button span i {
     padding-left: 30%;
-  }
+  } */
 }
