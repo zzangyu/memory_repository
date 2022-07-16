@@ -179,10 +179,10 @@ a {
 
 @media screen and (max-width: 830px) {
     body {
-        height: 160%;
+        height: 190%;
     }
     body:after {
-        height: 140%;
+        height: 170%;
     }
     header {
         position: static;

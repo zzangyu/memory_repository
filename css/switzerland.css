@@ -157,10 +157,10 @@ ul li{
 
 @media screen and (max-width: 830px) {
     body {
-        height: 135%;
+        height: 170%;
     }
     body:after {
-        height: 130%;
+        height: 150%;
     }
     header {
         position: static;
