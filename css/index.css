@@ -9,30 +9,29 @@ html,body,footer {
 /* background image setting */
 #main {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient( to top, rgb(129, 189, 211), rgb(32, 163, 211) );
+    background: linear-gradient( to top, rgb(173, 203, 214), rgb(98, 177, 206), rgb(31, 164, 212), rgb(30, 123, 215),rgb(8, 109, 211));
 }
 
 /* img */
 img {
-    width: 8%;
-    height: 20%;
+    width: 40%;
+    height: 60%;
     border-radius: 15px;
-    animation: fadeOutUp 3s ease-out 1s;
+    animation: fadeOutUp 4.5s ease-out;
     
 }
 @keyframes fadeOutUp {
     from {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(800px) translateY(150px); 
 
     }
     to {
         opacity: 0;
-        transform: translateY(-60px);
+        transform: translateX(-100px) translateY(-100px);
 
     }
 }
